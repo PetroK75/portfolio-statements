@@ -1,0 +1,54 @@
+Statement,Header,Field Name,Field Value
+Statement,Data,BrokerName,Interactive Brokers Ireland Limited
+Statement,Data,Title,Activity Statement
+Statement,Data,Period,"January 1, 2026 - March 31, 2026"
+Statement,Data,WhenGenerated,"2026-04-01, 09:00:00 EDT"
+Account Information,Header,Field Name,Field Value
+Account Information,Data,Name,Test Person
+Account Information,Data,Account,U0000000
+Account Information,Data,Account Type,Individual
+Account Information,Data,Base Currency,EUR
+Net Asset Value,Header,Asset Class,Prior Total,Current Long,Current Short,Current Total,Change
+Net Asset Value,Data,Cash ,5000,6840,0,6840,1840
+Net Asset Value,Data,Stock,15000,27580,0,27580,12580
+Net Asset Value,Data,Options,0,0,-7360,-7360,-7360
+Net Asset Value,Data,Interest Accruals,0,10,0,10,10
+Net Asset Value,Data,Total,20000,34430,-7360,27070,7070
+Open Positions,Header,DataDiscriminator,Asset Category,Currency,Symbol,Quantity,Mult,Cost Price,Cost Basis,Close Price,Value,Unrealized P/L,Code
+Open Positions,Data,Summary,Stocks,EUR,EXS1,100,1,150,15000,170,17000,2000,
+Open Positions,Data,Lot,Stocks,EUR,EXS1,100,1,150,15000,170,17000,2000,
+Open Positions,Total,,Stocks,EUR,,,,,15000,,17000,2000,
+Open Positions,Data,Summary,Stocks,USD,AAPL,50,1,150,7500,230,11500,4000,
+Open Positions,Total,,Stocks,USD,,,,,7500,,11500,4000,
+Open Positions,Header,DataDiscriminator,Asset Category,Currency,Symbol,Quantity,Mult,Cost Price,Cost Basis,Close Price,Value,Unrealized P/L,Code
+Open Positions,Data,Summary,Equity and Index Options,USD,SPX 19DEC26 5000 P,-2,100,0,0,40,-8000,-8000,
+Open Positions,Total,,Equity and Index Options,USD,,,,,0,,-8000,-8000,
+Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Quantity,T. Price,C. Price,Proceeds,Comm/Fee,Basis,Realized P/L,MTM P/L,Code
+Trades,Data,Order,Stocks,USD,AAPL,"2026-02-10, 15:30:00",50,150,150,-7500,-1,7501,0,0,O
+Trades,SubTotal,,Stocks,USD,AAPL,,50,,,-7500,-1,7501,0,0,
+Trades,Data,Order,Equity and Index Options,USD,SPX 19DEC26 5000 P,"2026-03-02, 16:00:00",-2,0,40,0,-2.5,0,0,-8000,O
+Trades,Header,DataDiscriminator,Asset Category,Currency,Symbol,Date/Time,Quantity,T. Price,,Proceeds,Comm in EUR,,,MTM in EUR,Code
+Trades,Data,Order,Forex,EUR,EUR.USD,"2026-02-09, 10:00:00","-7,000",1.0870,,"7,609",-1.7,,,0,
+Financial Instrument Information,Header,Asset Category,Symbol,Description,Conid,Security ID,Listing Exch,Multiplier,Type,Code
+Financial Instrument Information,Data,Stocks,EXS1,ISHARES CORE DAX UCITS ETF DE,1001,DE0005933931,IBIS,1,ETF,
+Financial Instrument Information,Data,Stocks,AAPL,APPLE INC,1002,US0378331005,NASDAQ,1,COMMON,
+Financial Instrument Information,Header,Asset Category,Symbol,Description,Conid,Underlying,Listing Exch,Multiplier,Expiry,Delivery Month,Type,Strike,Code
+Financial Instrument Information,Data,Equity and Index Options,SPX 19DEC26 5000 P,SPX 19DEC26 5000 P,1003,SPX,CBOE,100,2026-12-19,2026-12,P,5000,
+Cash Report,Header,Currency Summary,Currency,Total,Securities,Futures,Month to Date,Year to Date
+Cash Report,Data,Starting Cash,Base Currency Summary,5000,5000,0,,
+Cash Report,Data,Ending Cash,Base Currency Summary,6840,6840,0,,
+Cash Report,Data,Starting Cash,EUR,5000,5000,0,,
+Cash Report,Data,Ending Cash,EUR,5000,5000,0,,
+Cash Report,Data,Starting Cash,USD,0,0,0,,
+Cash Report,Data,Ending Cash,USD,2000,2000,0,,
+Dividends,Header,Currency,Date,Description,Amount
+Dividends,Data,USD,2026-03-15,AAPL(US0378331005) Cash Dividend USD 0.25 per Share (Ordinary Dividend),12.5
+Dividends,Data,Total,,,12.5
+Withholding Tax,Header,Currency,Date,Description,Amount,Code
+Withholding Tax,Data,USD,2026-03-15,AAPL(US0378331005) Cash Dividend USD 0.25 per Share - US Tax,-1.88,
+Withholding Tax,Data,Total,,,-1.88,
+Deposits & Withdrawals,Header,Currency,Settle Date,Description,Amount
+Deposits & Withdrawals,Data,EUR,2026-02-05,Electronic Fund Transfer,10000
+Deposits & Withdrawals,Data,Total,,,10000
+Base Currency Exchange Rate,Header,Currency,Rate
+Base Currency Exchange Rate,Data,USD,0.92

@@ -1,0 +1,28 @@
+# --- Hard rule: no statements, holdings or credentials in git ---------------
+.streamlit/secrets.toml
+.env
+*.env
+
+# Statements and holdings exports of any kind. The only tabular files allowed
+# in the repo are synthetic test fixtures under tests/fixtures/.
+*.pdf
+*.csv
+*.xls
+*.xlsx
+*.xlsm
+*.ofx
+*.qfx
+*.qif
+!tests/fixtures/*.csv
+statements/
+private/
+data/
+*.sqlite
+*.db
+
+# --- Python -------------------------------------------------------------------
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
